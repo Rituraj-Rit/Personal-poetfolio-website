@@ -1,0 +1,498 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    background-color: #ad4444;
+    color: white;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    gap: 40px;
+    padding: 20px 0;
+    position: fixed;
+    box-shadow: 2px 3px 15px gray, inset 2px 3px 10px gray;
+}
+
+#rds {
+    font-size: 30px;
+    font-style: italic;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+header a span {
+    color: rgb(38, 0, 255);
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+
+header nav ul li {
+    list-style-type: none;
+}
+
+ul li a {
+    background: #B8E1FC;
+    background: radial-gradient(circle farthest-corner at center center, #d4e1e9 0%, #0f466b 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 10px;
+    padding-top: 5px;
+    border-radius: 10%;
+    font-size: 20px;
+}
+
+header nav ul li a:hover {
+    text-shadow: 2px 2px 20px aqua;
+    box-shadow: 2px 2px 6px gray, inset 2px 2px 5px gray;
+}
+
+.firstsection {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 95vh;
+    padding: 0px 0px 0px 30px;
+
+}
+
+.firstsection div {
+    width: 35%;
+}
+
+.image1 {
+    height: 300px;
+    border-radius: 30%;
+    box-shadow: 0px 0px 10px aqua, inset 2px 3px 4px aqua;
+    object-fit: cover;
+    filter: drop-shadow(2px 2px 10px rgb(218, 209, 194));
+    transition-duration: 0.2s;
+}
+
+.image1:hover {
+    transform: scale(1.1);
+}
+
+.firstsection .left h3,
+h1 {
+    margin-bottom: 3px;
+}
+
+.firstsection .left h3 {
+    font-size: 15px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.firstsection .left h3 span {
+    color: cyan;
+    font-size: 25px;
+}
+
+.firstsection .left h1 {
+    color: aqua;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.firstsection .left .icons i {
+    border-radius: 50%;
+    border: 1px solid aqua;
+    padding: 5px 5px;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 10px 0px;
+    margin-bottom: 15px;
+    margin-right: 13px;
+    color: aqua;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.firstsection .left .icons i:hover {
+    box-shadow: 0px 0px 5px cyan, inset 0px 0px 5px cyan;
+    transform: scale(1.2);
+}
+
+.separation {
+    height: 3px;
+    width: 800px;
+    margin: 30px auto;
+    background-color: #103a55;
+}
+
+#about {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    height: 80vh;
+    margin-top: 80px;
+}
+
+#about div {
+    width: 100%;
+}
+
+#about .image {
+    width: 300px;
+    margin-left: 150px;
+    transition-duration: 0.3s;
+    filter: drop-shadow(2px 2px 10px rgb(216, 212, 205));
+}
+
+.image:hover {
+    transform: scale(1.2);
+}
+
+#about .content {
+    margin: 0px 40px;
+}
+
+.content {
+    font-size: 20px;
+}
+
+#about span {
+    color: cyan;
+}
+
+#about h4 {
+    margin: 15px 0;
+    font-size: 18px;
+}
+
+#about p {
+    font-size: 12px;
+    margin-bottom: 25px;
+}
+
+#about a {
+    color: #081C29;
+    border: none;
+    text-decoration: none;
+    border-radius: 30px;
+    background-color: cyan;
+    padding: 5px 10px;
+    font-size: 13px;
+    font-weight: 500;
+    box-shadow: 0px 0px 10px cyan;
+    transition: 0.15s;
+}
+
+#about a:hover {
+    box-shadow: 0px 0px 5px cyan;
+}
+
+#services h1 {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#services h1 span {
+    color: cyan;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .divbox {
+    border-radius: 20px;
+    background: transparent;
+    box-shadow: 0px 0px 10px gray;
+    padding: 30px;
+    margin: 0 30px;
+    transition-duration: 0.2s;
+}
+
+.container .divbox i {
+    color: cyan;
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.container .divbox h3 {
+    padding-bottom: 20px;
+    font-size: 15px;
+    font-weight: 550;
+}
+
+.container .divbox p {
+    font-size: 10px;
+}
+
+.container .divbox:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+    box-shadow: 0px 0px 15px rgb(202, 187, 187), inset 5px 5px 15px rgb(211, 157, 157);
+}
+
+#skills {
+    box-shadow: 2px 3px 15px gray;
+}
+
+#skills h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#skills .heading {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#skills .heading span {
+    color: cyan;
+}
+
+#skills .underline {
+    font-size: 15px;
+    text-decoration: underline;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.all {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+.all div li {
+    list-style: none;
+}
+
+.all div {
+    margin: 7px 0;
+}
+
+.all div li i {
+    margin-bottom: 5px;
+}
+
+.all div li .bar {
+    height: 20px;
+    background-color: rgb(26, 24, 24);
+    width: 400px;
+    display: block;
+    border-radius: 10px;
+    margin-top: 2px;
+    overflow: hidden;
+}
+
+.bar span {
+    float: left;
+    height: 20px;
+    background: cyan;
+}
+
+.one {
+    animation: one 1s forwards;
+}
+
+.two {
+    width: 80%;
+    animation: two 1s forwards;
+}
+
+.Three {
+    width: 85%;
+    animation: Three 1s forwards;
+}
+
+.fourstar {
+    width: 70%;
+    animation: fourstar 1s forwards;
+}
+
+.fivestar {
+    width: 75%;
+    animation: fivestar 1s forwards;
+}
+
+@keyframes one {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 5%;
+    }
+}
+
+@keyframes two {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 10%;
+    }
+}
+
+@keyframes Three {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+
+@keyframes fourstar {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes fivestar {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+#contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#contact div {
+    width: 39%;
+}
+
+#contact .first h4 {
+    font-family: 20px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#contact .first h4 span {
+    color: cyan;
+}
+
+#contact .first h5 {
+    font-size: 15px;
+    font-family: 600;
+    margin-bottom: 13px;
+}
+
+#contact .first p {
+    font-size: 12px;
+}
+
+.contact-detail {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contact-detail i {
+    color: cyan;
+    padding-right: 8px;
+    font-size: 13px;
+}
+
+#contact .first .icons2 i {
+    color: cyan;
+    border-radius: 50%;
+    border: 1px solid cyan;
+    font-size: 10px;
+    padding: 4px;
+    margin: 15px 5px 10px 0;
+    transition: 0.15s;
+    box-shadow: 0px 0px 7px cyan;
+}
+
+#contact .first .icons2 i:hover {
+    box-shadow: 0px 0px 5px cyan, inset 0px 0px 5px cyan;
+    transform: scale(1.2);
+}
+
+.second input,
+textarea {
+    background-color: #a4a4c7;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    padding: 3px 10px;
+    margin-bottom: 3px;
+    width: 35vw;
+    color: white;
+    border-radius: 20px;
+}
+
+.second,
+input[type="text"],
+input[type="Email"] {
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 15px;
+}
+
+.second button {
+    background-color: cyan;
+    padding: 0.5vw 16vw;
+    border: none;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 550;
+    box-shadow: 0px 0px 10px cyan;
+    margin-top: 10px;
+    transition: 0.12s;
+}
+
+.second button:hover {
+    box-shadow: 0px 0px 5px cyan;
+}
+
+::placeholder {
+    color: rgb(27, 14, 14);
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 30px;
+    color: grey;
+}
